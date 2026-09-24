@@ -98,10 +98,6 @@ public final class ItemHelper {
 		};
 	}
 
-	public static boolean isRepairableDamagedItem(ItemStack stack) {
-		return stack.isDamageableItem() && stack.isRepairable() && stack.getDamageValue() > 0;
-	}
-
 	/**
 	 * @return The amount of the given stack that could not fit. If it all fit, zero is returned
 	 */

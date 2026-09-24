@@ -67,7 +67,6 @@ public class PECustomConversionProvider extends CustomConversionProvider {
 				.conversion(Items.TORCHFLOWER_SEEDS).ingredient(Items.TORCHFLOWER).end()
 				.conversion(Items.PITCHER_POD).ingredient(Items.PITCHER_PLANT).end()
 				.conversion(Items.WRITTEN_BOOK).ingredient(Items.WRITABLE_BOOK).end()
-				.conversion(Items.ENCHANTED_BOOK).ingredient(Items.BOOK).end()
 				.conversion(Items.ENCHANTED_GOLDEN_APPLE).ingredient(Items.APPLE).ingredient(Tags.Items.STORAGE_BLOCKS_GOLD, 8).end()
 				.conversion(Items.STRIPPED_BAMBOO_BLOCK).ingredient(Items.BAMBOO_BLOCK).end()
 				.conversion(Items.GLOBE_BANNER_PATTERN).ingredient(Tags.Items.GEMS_EMERALD, 3).end()

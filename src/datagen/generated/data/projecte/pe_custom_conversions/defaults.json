@@ -485,18 +485,6 @@
           "ingredients": [
             {
               "type": "projecte:item",
-              "id": "minecraft:book"
-            }
-          ],
-          "output": {
-            "type": "projecte:item",
-            "id": "minecraft:enchanted_book"
-          }
-        },
-        {
-          "ingredients": [
-            {
-              "type": "projecte:item",
               "id": "minecraft:apple"
             },
             {

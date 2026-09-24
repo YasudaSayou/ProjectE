@@ -11,7 +11,6 @@ import moze_intel.projecte.api.capabilities.item.IPedestalItem;
 import moze_intel.projecte.config.ProjectEConfig;
 import moze_intel.projecte.gameObjs.registries.PEDataComponentTypes;
 import moze_intel.projecte.integration.IntegrationHelper;
-import moze_intel.projecte.utils.ItemHelper;
 import moze_intel.projecte.utils.MathUtils;
 import moze_intel.projecte.utils.PlayerHelper;
 import moze_intel.projecte.utils.WorldHelper;
@@ -32,9 +31,11 @@ import org.jetbrains.annotations.Nullable;
 
 public class RepairTalisman extends ItemPE implements IAlchBagItem, IAlchChestItem, IPedestalItem, ICapabilityAware {
 
-	private static final BiPredicate<ItemStack, Void> CAN_REPAIR_ITEM = (stack, ignored) -> !stack.isEmpty() &&
-																							stack.getCapability(PECapabilities.MODE_CHANGER_ITEM_CAPABILITY) == null &&
-																							ItemHelper.isRepairableDamagedItem(stack);
+	private static final BiPredicate<ItemStack, Void> CAN_REPAIR_ITEM = (stack, ignored) ->
+		!stack.isEmpty()
+		&& stack.getCapability(PECapabilities.MODE_CHANGER_ITEM_CAPABILITY) == null
+		&& stack.isDamaged();
+
 	private static final BiPredicate<ItemStack, Player> CAN_REPAIR_PLAYER_ITEM =
 			(stack, player) -> CAN_REPAIR_ITEM.test(stack, null) && (stack != player.getMainHandItem() || !player.swinging);
 

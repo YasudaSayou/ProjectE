@@ -120,7 +120,7 @@ def replaceResources = tasks.register("replaceResources", Copy) {
 
 version = "${projecte_version}"
 group = "moze_intel.projecte"
-project.base.archivesName = "projecte"
+project.base.archivesName = "ProjectE-${minecraft_version}"
 
 java {
     toolchain {

@@ -41,7 +41,7 @@ public class PELangProvider extends BaseLanguageProvider {
 		//Misc stuff
 		add(PELang.PROJECTE, PECore.MODNAME);
 		add(PELang.PACK_DESCRIPTION, "Resources used for " + PECore.MODNAME);
-		addModInfo(PECore.MODNAME, "A complete rewrite of EE2 for modern Minecraft versions.");
+		addModInfo("A complete rewrite of EE2 for modern Minecraft versions.");
 		add(PELang.SECONDS, "%1$s seconds");
 		add(PELang.EVERY_TICK, "%1$s seconds (every tick)");
 		add(PELang.HIGH_ALCHEMIST, "High alchemist %1$s has joined the server");

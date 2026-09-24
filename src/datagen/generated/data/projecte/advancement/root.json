@@ -19,7 +19,7 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "projecte:textures/block/dark_matter_block.png",
     "description": {
       "translate": "advancements.projecte.description"
     },

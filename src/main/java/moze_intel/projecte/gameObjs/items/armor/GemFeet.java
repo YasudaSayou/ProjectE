@@ -107,7 +107,7 @@ public class GemFeet extends GemArmorBase {
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.TooltipContext context, @NotNull List<Component> tooltip, @NotNull TooltipFlag flags) {
 		super.appendHoverText(stack, context, tooltip, flags);
-		tooltip.add(PELang.GEM_LORE_FEET.translate());
+		tooltip.add(PELang.GEM_LORE_FEET.translate().withStyle(ChatFormatting.GRAY));
 		tooltip.add(PELang.STEP_ASSIST_PROMPT.translate(ClientKeyHelper.getKeyName(PEKeybind.BOOTS_TOGGLE)));
 		tooltip.add(getComponent(isStepAssist(stack)));
 	}

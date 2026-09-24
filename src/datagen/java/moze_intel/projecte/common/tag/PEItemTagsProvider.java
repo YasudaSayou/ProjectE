@@ -139,7 +139,7 @@ public class PEItemTagsProvider extends ItemTagsProvider {
 		IntrinsicTagAppender<Item> ignoreMissingEMC = tag(PETags.Items.IGNORE_MISSING_EMC).add(
 				Items.DEBUG_STICK, Items.KNOWLEDGE_BOOK, Items.STRUCTURE_VOID, Items.FROGSPAWN, Items.PETRIFIED_OAK_SLAB, Items.REINFORCED_DEEPSLATE,
 				Items.SPAWNER, Items.TRIAL_SPAWNER, Items.VAULT, Items.TRIAL_KEY, Items.OMINOUS_TRIAL_KEY,
-				Items.ELYTRA, Items.TOTEM_OF_UNDYING,
+				Items.ELYTRA, Items.TOTEM_OF_UNDYING, Items.ENCHANTED_BOOK,
 				Items.EXPERIENCE_BOTTLE, Items.OMINOUS_BOTTLE,
 				Items.DRAGON_HEAD, Items.PLAYER_HEAD, Items.WITHER_SKELETON_SKULL,
 				Items.BEE_NEST, Items.FARMLAND,

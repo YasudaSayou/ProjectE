@@ -65,8 +65,7 @@ public abstract class BaseLanguageProvider extends LanguageProvider {
 		}
 	}
 
-	protected void addModInfo(String modName, String description) {
-		add("fml.menu.mods.info.displayname." + modid, modName);
+	protected void addModInfo(String description) {
 		add("fml.menu.mods.info.description." + modid, description);
 	}
 

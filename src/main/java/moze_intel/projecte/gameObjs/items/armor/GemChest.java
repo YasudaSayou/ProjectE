@@ -6,6 +6,7 @@ import moze_intel.projecte.gameObjs.items.IFireProtector;
 import moze_intel.projecte.utils.PlayerHelper;
 import moze_intel.projecte.utils.WorldHelper;
 import moze_intel.projecte.utils.text.PELang;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -27,7 +28,7 @@ public class GemChest extends GemArmorBase implements IFireProtector {
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.TooltipContext context, @NotNull List<Component> tooltip, @NotNull TooltipFlag flags) {
 		super.appendHoverText(stack, context, tooltip, flags);
-		tooltip.add(PELang.GEM_LORE_CHEST.translate());
+		tooltip.add(PELang.GEM_LORE_CHEST.translate().withStyle(ChatFormatting.GRAY));
 	}
 
 	@Override

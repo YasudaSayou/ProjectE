@@ -6,7 +6,6 @@ import moze_intel.projecte.api.proxy.IEMCProxy;
 import moze_intel.projecte.gameObjs.PETags;
 import moze_intel.projecte.gameObjs.registries.PERecipeSerializers;
 import moze_intel.projecte.utils.EMCHelper;
-import moze_intel.projecte.utils.ItemHelper;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.CraftingBookCategory;
@@ -31,7 +30,7 @@ public class RecipesCovalenceRepair extends CustomRecipe {
 			if (!input.isEmpty()) {
 				if (input.is(PETags.Items.COVALENCE_DUST)) {
 					dust.add(input);
-				} else if (tool.isEmpty() && ItemHelper.isRepairableDamagedItem(input)) {
+				} else if (tool.isEmpty() && input.isDamaged()) {
 					tool = input;
 				} else {//Invalid item
 					return null;
